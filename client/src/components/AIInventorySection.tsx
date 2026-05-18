@@ -1,7 +1,7 @@
 /*
  * MoveForce AI Inventory Scan Section
- * Design: Premium, professional spotlight section with refined animations
- * Subtle scan effect, elegant typography, sophisticated visual hierarchy
+ * Design: Premium, professional spotlight section with refined scanning animation
+ * Elegant scan line effect, professional visual hierarchy, sophisticated animations
  */
 import { useEffect, useRef } from "react";
 import { Smartphone, Brain, Clock, FileText, ArrowRight } from "lucide-react";
@@ -98,7 +98,7 @@ export default function AIInventorySection() {
 
         {/* Main Content: Image + Features */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* AI Scan Image with refined effect */}
+          {/* AI Scan Image with professional scanning animation */}
           <div className="reveal">
             <div
               ref={imageRef}
@@ -115,12 +115,34 @@ export default function AIInventorySection() {
                 loading="lazy"
               />
 
-              {/* Subtle scan pulse effect */}
+              {/* Professional horizontal scan line */}
+              <div
+                className="absolute inset-x-0 h-0.5 pointer-events-none"
+                style={{
+                  background: "linear-gradient(90deg, transparent 0%, rgba(232,160,32,0.6) 50%, transparent 100%)",
+                  animation: "scanLine 3s ease-in-out infinite",
+                  top: "30%",
+                  boxShadow: "0 0 12px rgba(232,160,32,0.4), 0 0 24px rgba(232,160,32,0.2)",
+                }}
+              />
+
+              {/* Secondary scan line with slight offset */}
+              <div
+                className="absolute inset-x-0 h-0.5 pointer-events-none"
+                style={{
+                  background: "linear-gradient(90deg, transparent 0%, rgba(232,160,32,0.3) 50%, transparent 100%)",
+                  animation: "scanLine 3s ease-in-out infinite 0.5s",
+                  top: "60%",
+                  boxShadow: "0 0 8px rgba(232,160,32,0.2)",
+                }}
+              />
+
+              {/* Subtle glow overlay during scan */}
               <div
                 className="absolute inset-0 pointer-events-none"
                 style={{
-                  background: "linear-gradient(180deg, transparent 0%, rgba(232,160,32,0.03) 50%, transparent 100%)",
-                  animation: "pulse 4s ease-in-out infinite",
+                  background: "linear-gradient(180deg, rgba(232,160,32,0.08) 0%, transparent 50%, rgba(232,160,32,0.04) 100%)",
+                  animation: "scanGlow 3s ease-in-out infinite",
                 }}
               />
 
@@ -245,9 +267,30 @@ export default function AIInventorySection() {
       </div>
 
       <style>{`
-        @keyframes pulse {
-          0%, 100% { opacity: 0; }
-          50% { opacity: 1; }
+        @keyframes scanLine {
+          0% {
+            top: 0%;
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            top: 100%;
+            opacity: 0;
+          }
+        }
+
+        @keyframes scanGlow {
+          0%, 100% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
         }
       `}</style>
     </section>
