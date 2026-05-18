@@ -1,5 +1,5 @@
 /*
- * MovePrecision Trust Bar
+ * MoveForce Trust Bar
  * Design: "Trusted by" company name logos in muted style below hero
  */
 export default function TrustBar() {

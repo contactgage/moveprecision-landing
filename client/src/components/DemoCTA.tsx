@@ -1,5 +1,5 @@
 /*
- * MovePrecision Demo CTA Section
+ * MoveForce Demo CTA Section
  * Design: Full-width dark section with gold gradient, form for demo request
  */
 import { useRef, useEffect, useState } from "react";
@@ -68,17 +68,17 @@ export default function DemoCTA() {
               }}
             >
               <div className="reveal">
-                <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
+                <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
                   Get Started Today
                 </p>
                 <h2
                   className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight"
                   style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
                 >
-                  See MovePrecision in Action — Free
+                  See MoveForce in Action — Free
                 </h2>
                 <p className="text-base mb-8 leading-relaxed" style={{ color: "#64748B" }}>
-                  Book a personalized 30-minute demo and see exactly how MovePrecision will transform your moving company. No pressure, no commitment.
+                  Book a personalized 30-minute demo and see exactly how MoveForce will transform your moving company. No pressure, no commitment.
                 </p>
 
                 <ul className="space-y-3">
@@ -89,7 +89,7 @@ export default function DemoCTA() {
                     "14-day free trial, no credit card needed",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
-                      <CheckCircle2 size={16} style={{ color: "#E8A020" }} />
+                      <CheckCircle2 size={16} style={{ color: "#0066FF" }} />
                       <span className="text-sm" style={{ color: "#94A3B8" }}>{item}</span>
                     </li>
                   ))}

@@ -1,6 +1,6 @@
 /*
- * MovePrecision Comparison Table
- * Design: Dark table with gold highlighting on MovePrecision column
+ * MoveForce Comparison Table
+ * Design: Dark table with gold highlighting on MoveForce column
  */
 import { useEffect, useRef } from "react";
 import { Check, X, Minus } from "lucide-react";
@@ -74,17 +74,17 @@ export default function CompareSection() {
     >
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 reveal">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
             Why Switch
           </p>
           <h2
             className="text-4xl sm:text-5xl font-extrabold mb-4"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
           >
-            MovePrecision vs. <span className="text-gold-gradient">The Competition</span>
+            MoveForce vs. <span className="text-blue-gradient">The Competition</span>
           </h2>
           <p className="text-lg max-w-xl mx-auto" style={{ color: "#64748B" }}>
-            See exactly why moving companies are switching from legacy software to MovePrecision.
+            See exactly why moving companies are switching from legacy software to MoveForce.
           </p>
         </div>
 
@@ -98,21 +98,21 @@ export default function CompareSection() {
                 >
                   Feature
                 </th>
-                {/* MovePrecision column - highlighted */}
+                {/* MoveForce column - highlighted */}
                 <th
                   className="py-4 px-5 text-center text-sm font-bold"
                   style={{
                     background: "rgba(232,160,32,0.08)",
-                    color: "#E8A020",
+                    color: "#0066FF",
                     borderLeft: "1px solid rgba(232,160,32,0.2)",
                     borderRight: "1px solid rgba(232,160,32,0.2)",
                   }}
                 >
                   <div className="flex flex-col items-center gap-1">
-                    <span>MovePrecision</span>
+                    <span>MoveForce</span>
                     <span
                       className="text-xs px-2 py-0.5 rounded-full font-semibold"
-                      style={{ background: "rgba(232,160,32,0.2)", color: "#E8A020" }}
+                      style={{ background: "rgba(232,160,32,0.2)", color: "#0066FF" }}
                     >
                       ✦ Best Choice
                     </span>
@@ -143,13 +143,13 @@ export default function CompareSection() {
                     {feat === "AI Inventory Scan" && (
                       <span
                         className="ml-2 text-xs px-1.5 py-0.5 rounded font-semibold"
-                        style={{ background: "rgba(232,160,32,0.15)", color: "#E8A020" }}
+                        style={{ background: "rgba(232,160,32,0.15)", color: "#0066FF" }}
                       >
                         AI
                       </span>
                     )}
                   </td>
-                  {/* MovePrecision */}
+                  {/* MoveForce */}
                   <td
                     className="py-3.5 px-5 text-center"
                     style={{
@@ -180,7 +180,7 @@ export default function CompareSection() {
             href="#demo"
             className="btn-gold inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold"
           >
-            Switch to MovePrecision Today
+            Switch to MoveForce Today
           </a>
           <p className="text-sm mt-3" style={{ color: "#64748B" }}>
             Free migration assistance included. No credit card required.

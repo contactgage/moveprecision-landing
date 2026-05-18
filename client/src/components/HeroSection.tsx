@@ -1,7 +1,7 @@
 /*
- * MovePrecision Hero Section
+ * MoveForce Hero Section
  * Design: Full-viewport, mesh background, floating dashboard, staggered entrance animations
- * Dark navy + gold, centered headline, dual CTAs, social proof bar below
+ * Dark navy + electric blue, centered headline, dual CTAs, social proof bar below
  */
 import { useEffect, useRef } from "react";
 import { ArrowRight, Play, Star, TrendingUp, Users, Zap } from "lucide-react";
@@ -39,13 +39,13 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Gold radial glow top */}
+      {/* Blue radial glow top */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none"
         style={{
           width: "800px",
           height: "400px",
-          background: "radial-gradient(ellipse at center, rgba(232,160,32,0.12) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse at center, rgba(0,102,255,0.12) 0%, transparent 70%)",
         }}
       />
 
@@ -55,9 +55,9 @@ export default function HeroSection() {
           <div
             className="hero-animate inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6"
             style={{
-              background: "rgba(232, 160, 32, 0.12)",
-              border: "1px solid rgba(232, 160, 32, 0.3)",
-              color: "#E8A020",
+              background: "rgba(0, 102, 255, 0.12)",
+              border: "1px solid rgba(0, 102, 255, 0.3)",
+              color: "#0066FF",
             }}
           >
             <Zap size={12} className="fill-current" />
@@ -67,10 +67,10 @@ export default function HeroSection() {
           {/* Headline */}
           <h1
             className="hero-animate text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6"
-            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", maxWidth: "900px" }}
+            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", maxWidth: "900px", color: "#F0EDE8" }}
           >
             The Moving CRM That{" "}
-            <span className="text-gold-gradient">Thinks Ahead</span>
+            <span style={{ background: "linear-gradient(135deg, #0066FF 0%, #00D4FF 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Dominates</span>
           </h1>
 
           {/* Sub-headline */}
@@ -78,7 +78,7 @@ export default function HeroSection() {
             className="hero-animate text-lg sm:text-xl mb-8 max-w-2xl leading-relaxed"
             style={{ color: "#94A3B8" }}
           >
-            MovePrecision is the AI-powered platform built exclusively for moving companies. Win more jobs, dispatch smarter, and grow revenue — all from one command center.
+            MoveForce is the AI-powered platform built exclusively for moving companies. Win more jobs, dispatch smarter, and grow revenue — all from one command center.
           </p>
 
           {/* CTA Buttons */}
@@ -109,7 +109,7 @@ export default function HeroSection() {
                 className="w-7 h-7 rounded-full flex items-center justify-center"
                 style={{ background: "rgba(232, 160, 32, 0.2)" }}
               >
-                <Play size={12} className="ml-0.5" style={{ color: "#E8A020" }} />
+                <Play size={12} className="ml-0.5" style={{ color: "#0066FF" }} />
               </div>
               Watch 2-min Demo
             </a>
@@ -123,19 +123,19 @@ export default function HeroSection() {
             <div className="flex items-center gap-1.5">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={13} className="fill-current" style={{ color: "#E8A020" }} />
+                  <Star key={i} size={13} className="fill-current" style={{ color: "#0066FF" }} />
                 ))}
               </div>
               <span className="text-sm font-medium" style={{ color: "#94A3B8" }}>4.9/5 on Capterra</span>
             </div>
             <div className="w-px h-4" style={{ background: "rgba(255,255,255,0.1)" }} />
             <div className="flex items-center gap-1.5">
-              <Users size={14} style={{ color: "#E8A020" }} />
+              <Users size={14} style={{ color: "#0066FF" }} />
               <span className="text-sm font-medium" style={{ color: "#94A3B8" }}>500+ Moving Companies</span>
             </div>
             <div className="w-px h-4" style={{ background: "rgba(255,255,255,0.1)" }} />
             <div className="flex items-center gap-1.5">
-              <TrendingUp size={14} style={{ color: "#E8A020" }} />
+              <TrendingUp size={14} style={{ color: "#0066FF" }} />
               <span className="text-sm font-medium" style={{ color: "#94A3B8" }}>Avg. 43% Revenue Growth</span>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function HeroSection() {
             <div
               className="absolute inset-0 rounded-2xl pointer-events-none"
               style={{
-                background: "radial-gradient(ellipse at center, rgba(232,160,32,0.15) 0%, transparent 70%)",
+                background: "radial-gradient(ellipse at center, rgba(0,102,255,0.15) 0%, transparent 70%)",
                 filter: "blur(40px)",
                 transform: "translateY(20px) scale(0.95)",
               }}
@@ -157,13 +157,13 @@ export default function HeroSection() {
             <div
               className="relative rounded-2xl overflow-hidden"
               style={{
-                border: "1px solid rgba(232, 160, 32, 0.2)",
-                boxShadow: "0 40px 120px rgba(0,0,0,0.6), 0 0 60px rgba(232,160,32,0.1)",
+                border: "1px solid rgba(0, 102, 255, 0.2)",
+                boxShadow: "0 40px 120px rgba(0,0,0,0.6), 0 0 60px rgba(0,102,255,0.1)",
               }}
             >
               <img
                 src={HERO_DASHBOARD_URL}
-                alt="MovePrecision Dashboard"
+                alt="MoveForce Dashboard"
                 className="w-full h-auto"
                 loading="eager"
               />

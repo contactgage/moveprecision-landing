@@ -1,6 +1,6 @@
 /*
- * MovePrecision Navbar
- * Design: Transparent-to-dark on scroll, gold logo accent, sticky positioning
+ * MoveForce Navbar
+ * Design: Transparent-to-dark on scroll, electric blue accent, sticky positioning
  */
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
@@ -38,19 +38,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 group">
-            <div
-              className="w-8 h-8 rounded-lg flex items-center justify-center"
-              style={{ background: "linear-gradient(135deg, #F5C04A 0%, #E8A020 100%)" }}
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#0A0E1A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/moveforce-logo-MVsD76dmxaQgb8jAVbcWJ4.webp" alt="MoveForce" className="w-8 h-8" />
             <span
               className="text-lg font-bold tracking-tight"
               style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
             >
-              Move<span style={{ color: "#E8A020" }}>Precision</span>
+              Move<span style={{ color: "#0066FF" }}>Force</span>
             </span>
           </a>
 

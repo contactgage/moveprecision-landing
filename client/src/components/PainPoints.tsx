@@ -1,5 +1,5 @@
 /*
- * MovePrecision Pain Points Section
+ * MoveForce Pain Points Section
  * Design: Dark section with 3-column cards showing problems, then solution pivot
  */
 import { useEffect, useRef } from "react";
@@ -60,7 +60,7 @@ export default function PainPoints() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16 reveal">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
             The Problem
           </p>
           <h2
@@ -68,7 +68,7 @@ export default function PainPoints() {
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
           >
             Still Running Your Business<br />
-            <span className="text-gold-gradient">Like It's 2010?</span>
+            <span className="text-blue-gradient">Like It's 2010?</span>
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "#64748B" }}>
             Manual processes, stitched-together tools, and clunky software are holding your moving company back from its real potential.
@@ -134,7 +134,7 @@ export default function PainPoints() {
             href="#features"
             className="btn-gold inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold"
           >
-            See How MovePrecision Fixes This
+            See How MoveForce Fixes This
             <ArrowRight size={18} />
           </a>
         </div>

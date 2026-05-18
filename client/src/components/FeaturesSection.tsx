@@ -1,5 +1,5 @@
 /*
- * MovePrecision Features Section
+ * MoveForce Features Section
  * Design: Alternating left/right content + screenshot blocks, scroll-triggered reveals
  */
 import { useEffect, useRef } from "react";
@@ -12,7 +12,7 @@ const features = [
   {
     tag: "CRM & Lead Management",
     title: "Close More Moves. Miss Zero Leads.",
-    description: "Every lead, call, and conversation in one place. MovePrecision's CRM automatically tracks prospects, sends follow-up sequences, and surfaces your hottest opportunities — so your team focuses on closing, not chasing.",
+    description: "Every lead, call, and conversation in one place. MoveForce's CRM automatically tracks prospects, sends follow-up sequences, and surfaces your hottest opportunities — so your team focuses on closing, not chasing.",
     bullets: [
       "Visual pipeline from first call to final invoice",
       "Automated SMS & email follow-up sequences",
@@ -21,7 +21,7 @@ const features = [
     ],
     stat: { value: "40%", label: "more conversions on average" },
     image: CRM_URL,
-    imageAlt: "MovePrecision CRM Lead Pipeline",
+    imageAlt: "MoveForce CRM Lead Pipeline",
     reverse: false,
     accentColor: "#22D3EE",
   },
@@ -37,7 +37,7 @@ const features = [
     ],
     stat: { value: "70%", label: "faster scheduling" },
     image: DISPATCH_URL,
-    imageAlt: "MovePrecision Dispatch Command Center",
+    imageAlt: "MoveForce Dispatch Command Center",
     reverse: true,
     accentColor: "#4ADE80",
   },
@@ -95,7 +95,7 @@ function FeatureBlock({ feature, index }: { feature: typeof features[0]; index: 
         <ul className="space-y-3 mb-8">
           {feature.bullets.map((bullet, i) => (
             <li key={i} className="flex items-start gap-3">
-              <CheckCircle2 size={18} className="mt-0.5 shrink-0" style={{ color: "#E8A020" }} />
+              <CheckCircle2 size={18} className="mt-0.5 shrink-0" style={{ color: "#0066FF" }} />
               <span className="text-sm" style={{ color: "#94A3B8" }}>{bullet}</span>
             </li>
           ))}
@@ -107,7 +107,7 @@ function FeatureBlock({ feature, index }: { feature: typeof features[0]; index: 
         >
           <span
             className="text-3xl font-extrabold"
-            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#E8A020" }}
+            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#0066FF" }}
           >
             {feature.stat.value}
           </span>
@@ -142,7 +142,7 @@ export default function FeaturesSection() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center pt-24 pb-4">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
             Platform Features
           </p>
           <h2
@@ -150,7 +150,7 @@ export default function FeaturesSection() {
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
           >
             Everything You Need to{" "}
-            <span className="text-gold-gradient">Run & Grow</span>
+            <span className="text-blue-gradient">Run & Grow</span>
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "#64748B" }}>
             One platform. Every tool your moving company needs — unified, modern, and built to scale.

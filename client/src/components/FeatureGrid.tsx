@@ -1,5 +1,5 @@
 /*
- * MovePrecision Feature Grid
+ * MoveForce Feature Grid
  * Design: 3-column icon grid of all platform features
  */
 import { useEffect, useRef } from "react";
@@ -51,14 +51,14 @@ export default function FeatureGrid() {
     >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 reveal">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
             Full Platform
           </p>
           <h2
             className="text-4xl sm:text-5xl font-extrabold mb-4"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
           >
-            One Platform. <span className="text-gold-gradient">Every Tool.</span>
+            One Platform. <span className="text-blue-gradient">Every Tool.</span>
           </h2>
           <p className="text-lg max-w-xl mx-auto" style={{ color: "#64748B" }}>
             No more stitching together 6 different apps. Everything your moving company needs is right here.
@@ -83,7 +83,7 @@ export default function FeatureGrid() {
               {feat.highlight && (
                 <div
                   className="absolute top-3 right-3 px-2 py-0.5 rounded-full text-xs font-bold"
-                  style={{ background: "rgba(232,160,32,0.15)", color: "#E8A020", border: "1px solid rgba(232,160,32,0.3)" }}
+                  style={{ background: "rgba(232,160,32,0.15)", color: "#0066FF", border: "1px solid rgba(232,160,32,0.3)" }}
                 >
                   AI
                 </div>
@@ -92,7 +92,7 @@ export default function FeatureGrid() {
                 className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
                 style={{
                   background: feat.highlight ? "rgba(232,160,32,0.15)" : "rgba(255,255,255,0.06)",
-                  color: feat.highlight ? "#E8A020" : "#94A3B8",
+                  color: feat.highlight ? "#0066FF" : "#94A3B8",
                 }}
               >
                 {feat.icon}

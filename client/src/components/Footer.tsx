@@ -1,5 +1,5 @@
 /*
- * MovePrecision Footer
+ * MoveForce Footer
  * Design: Dark navy, gold logo, organized link columns, social links
  */
 import { Twitter, Linkedin, Facebook, Instagram } from "lucide-react";
@@ -25,19 +25,12 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="col-span-2">
             <a href="#" className="flex items-center gap-2.5 mb-4">
-              <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg, #F5C04A 0%, #E8A020 100%)" }}
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#0A0E1A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/moveforce-logo-MVsD76dmxaQgb8jAVbcWJ4.webp" alt="MoveForce" className="w-8 h-8" />
               <span
                 className="text-lg font-bold"
                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
               >
-                Move<span style={{ color: "#E8A020" }}>Precision</span>
+                Move<span style={{ color: "#0066FF" }}>Force</span>
               </span>
             </a>
             <p className="text-sm leading-relaxed mb-5" style={{ color: "#475569", maxWidth: "220px" }}>
@@ -60,7 +53,7 @@ export default function Footer() {
                     border: "1px solid rgba(255,255,255,0.06)",
                   }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.color = "#E8A020";
+                    (e.currentTarget as HTMLElement).style.color = "#0066FF";
                     (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,160,32,0.3)";
                   }}
                   onMouseLeave={(e) => {
@@ -108,7 +101,7 @@ export default function Footer() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
         >
           <p className="text-xs" style={{ color: "#334155" }}>
-            © 2026 MovePrecision. All rights reserved.
+            © 2026 MoveForce. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full" style={{ background: "#4ADE80" }} />

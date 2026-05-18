@@ -1,5 +1,5 @@
 /*
- * MovePrecision Testimonials Section
+ * MoveForce Testimonials Section
  * Design: Dark background, large quote cards, gold star ratings, auto-scroll carousel
  */
 import { useEffect, useRef, useState } from "react";
@@ -14,7 +14,7 @@ const testimonials = [
     location: "Atlanta, GA",
     stat: "+52% revenue",
     initials: "MJ",
-    color: "#E8A020",
+    color: "#0066FF",
   },
   {
     quote: "The dispatch system is a game-changer. We went from morning chaos to a perfectly organized day. Our crews know exactly where to be and our customers love the live tracking.",
@@ -37,7 +37,7 @@ const testimonials = [
     color: "#4ADE80",
   },
   {
-    quote: "The CRM follow-up automation is worth the price alone. We're booking 40% more jobs just from leads that used to fall through the cracks. MovePrecision pays for itself every week.",
+    quote: "The CRM follow-up automation is worth the price alone. We're booking 40% more jobs just from leads that used to fall through the cracks. MoveForce pays for itself every week.",
     name: "Amanda Torres",
     title: "Sales Manager",
     company: "Lone Star Relocation",
@@ -47,7 +47,7 @@ const testimonials = [
     color: "#A78BFA",
   },
   {
-    quote: "We tried MoveItPro and Supermove before this. MovePrecision is in a completely different league. The onboarding was fast, the support is incredible, and the AI features are real.",
+    quote: "We tried MoveItPro and Supermove before this. MoveForce is in a completely different league. The onboarding was fast, the support is incredible, and the AI features are real.",
     name: "Robert Kim",
     title: "Owner",
     company: "Summit Moving Group",
@@ -111,14 +111,14 @@ export default function TestimonialsSection() {
 
       <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-14 reveal">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
             Customer Stories
           </p>
           <h2
             className="text-4xl sm:text-5xl font-extrabold mb-4"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
           >
-            Moving Companies <span className="text-gold-gradient">Love Us</span>
+            Moving Companies <span className="text-blue-gradient">Love Us</span>
           </h2>
         </div>
 
@@ -140,7 +140,7 @@ export default function TestimonialsSection() {
             {/* Stars */}
             <div className="flex gap-1 mb-6">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={18} className="fill-current" style={{ color: "#E8A020" }} />
+                <Star key={i} size={18} className="fill-current" style={{ color: "#0066FF" }} />
               ))}
             </div>
 
@@ -191,7 +191,7 @@ export default function TestimonialsSection() {
                   className="h-1.5 rounded-full transition-all duration-300"
                   style={{
                     width: i === active ? "28px" : "8px",
-                    background: i === active ? "#E8A020" : "rgba(255,255,255,0.15)",
+                    background: i === active ? "#0066FF" : "rgba(255,255,255,0.15)",
                   }}
                 />
               ))}
@@ -203,7 +203,7 @@ export default function TestimonialsSection() {
                 style={{ border: "1px solid rgba(255,255,255,0.12)", color: "#94A3B8" }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,160,32,0.4)";
-                  (e.currentTarget as HTMLElement).style.color = "#E8A020";
+                  (e.currentTarget as HTMLElement).style.color = "#0066FF";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)";
@@ -218,7 +218,7 @@ export default function TestimonialsSection() {
                 style={{ border: "1px solid rgba(255,255,255,0.12)", color: "#94A3B8" }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,160,32,0.4)";
-                  (e.currentTarget as HTMLElement).style.color = "#E8A020";
+                  (e.currentTarget as HTMLElement).style.color = "#0066FF";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)";
