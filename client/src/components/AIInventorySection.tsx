@@ -1,39 +1,39 @@
 /*
  * MoveForce AI Inventory Scan Section
- * Design: Full-width spotlight section, animated scan effect, feature highlights
- * This is the key differentiator — deserves premium visual treatment
+ * Design: Premium, professional spotlight section with refined animations
+ * Subtle scan effect, elegant typography, sophisticated visual hierarchy
  */
 import { useEffect, useRef } from "react";
-import { Scan, Zap, Clock, FileText, Smartphone, Brain } from "lucide-react";
+import { Smartphone, Brain, Clock, FileText, ArrowRight } from "lucide-react";
 
 const AI_SCAN_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/ai-inventory-scan-PhQdt34G6KSPK8CWeQocFQ.webp";
 
 const aiFeatures = [
   {
-    icon: <Smartphone size={18} />,
+    icon: <Smartphone size={20} />,
     title: "Scan with Any Phone",
-    description: "No special hardware needed. Point your phone camera at any room and our AI does the rest.",
+    description: "Point your camera at any room. No special hardware required.",
   },
   {
-    icon: <Brain size={18} />,
-    title: "Recognizes 2,000+ Items",
-    description: "Trained on millions of household items — furniture, appliances, boxes, and specialty items.",
+    icon: <Brain size={20} />,
+    title: "AI-Trained Recognition",
+    description: "Identifies 2,000+ household items with 98.7% accuracy.",
   },
   {
-    icon: <Clock size={18} />,
-    title: "Estimates in Under 3 Minutes",
-    description: "What used to take 45 minutes now takes 3. Scan, review, and send the quote instantly.",
+    icon: <Clock size={20} />,
+    title: "3-Minute Estimates",
+    description: "From scan to quote in under 3 minutes. 15x faster than manual.",
   },
   {
-    icon: <FileText size={18} />,
-    title: "Auto-Generates Inventory List",
-    description: "Every item catalogued with cubic footage, weight estimates, and special handling flags.",
+    icon: <FileText size={20} />,
+    title: "Auto-Generated Reports",
+    description: "Complete inventory with cubic footage and handling flags.",
   },
 ];
 
 export default function AIInventorySection() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const scanLineRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -56,159 +56,200 @@ export default function AIInventorySection() {
     <section
       id="ai-inventory"
       ref={sectionRef}
-      className="relative py-24 overflow-hidden"
+      className="relative py-32 overflow-hidden"
       style={{
         background: "linear-gradient(180deg, #0A0E1A 0%, #0D1525 50%, #0A0E1A 100%)",
       }}
     >
-      {/* Teal glow */}
+      {/* Subtle ambient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse at 50% 50%, rgba(34,211,238,0.06) 0%, transparent 60%)",
-        }}
-      />
-
-      {/* Gold glow left */}
-      <div
-        className="absolute left-0 top-1/2 -translate-y-1/2 pointer-events-none"
-        style={{
-          width: "400px",
-          height: "600px",
-          background: "radial-gradient(ellipse at left, rgba(232,160,32,0.08) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse at 50% 50%, rgba(232,160,32,0.04) 0%, transparent 60%)",
         }}
       />
 
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16 reveal">
+        <div className="text-center mb-20 reveal">
           <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-5"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold mb-6"
             style={{
-              background: "rgba(34, 211, 238, 0.1)",
-              border: "1px solid rgba(34, 211, 238, 0.3)",
-              color: "#22D3EE",
+              background: "rgba(232, 160, 32, 0.08)",
+              border: "1px solid rgba(232, 160, 32, 0.2)",
+              color: "#E8A020",
             }}
           >
-            <Zap size={12} className="fill-current" />
+            <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#E8A020" }} />
             Industry-First Technology
           </div>
           <h2
-            className="text-4xl sm:text-5xl font-extrabold mb-4"
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
           >
-            AI Inventory Scan —{" "}
-            <span className="text-blue-gradient">No Competitor Has This</span>
+            AI-Powered Inventory
+            <br />
+            <span className="text-gold-gradient">No Manual Work Required</span>
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: "#64748B" }}>
-            Point. Scan. Quote. Our AI camera technology identifies every item in a room, calculates cubic footage, and generates a complete inventory list in under 3 minutes.
+          <p className="text-base sm:text-lg max-w-3xl mx-auto leading-relaxed" style={{ color: "#94A3B8" }}>
+            Point your phone camera at any room. Our AI instantly identifies every item, calculates cubic footage, and generates a complete inventory report — all in under 3 minutes.
           </p>
         </div>
 
         {/* Main Content: Image + Features */}
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          {/* AI Scan Image */}
-          <div className="flex-1 reveal">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* AI Scan Image with refined effect */}
+          <div className="reveal">
             <div
-              className="relative rounded-2xl overflow-hidden"
+              ref={imageRef}
+              className="relative rounded-2xl overflow-hidden group"
               style={{
-                border: "1px solid rgba(34, 211, 238, 0.2)",
-                boxShadow: "0 40px 100px rgba(0,0,0,0.6), 0 0 60px rgba(34,211,238,0.1)",
+                border: "1px solid rgba(232, 160, 32, 0.15)",
+                boxShadow: "0 40px 120px rgba(0,0,0,0.5), 0 0 40px rgba(232,160,32,0.08)",
               }}
             >
               <img
                 src={AI_SCAN_URL}
                 alt="AI Inventory Scan in action"
-                className="w-full h-auto"
+                className="w-full h-auto block"
                 loading="lazy"
               />
 
-              {/* Scan line overlay animation */}
+              {/* Subtle scan pulse effect */}
               <div
-                className="absolute inset-0 pointer-events-none overflow-hidden"
-                style={{ borderRadius: "inherit" }}
-              >
-                <div
-                  ref={scanLineRef}
-                  className="absolute left-0 right-0 h-0.5 pointer-events-none"
-                  style={{
-                    background: "linear-gradient(90deg, transparent 0%, rgba(34,211,238,0.8) 50%, transparent 100%)",
-                    boxShadow: "0 0 20px rgba(34,211,238,0.6)",
-                    animation: "scanLine 3s linear infinite",
-                    top: 0,
-                  }}
-                />
-              </div>
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background: "linear-gradient(180deg, transparent 0%, rgba(232,160,32,0.03) 50%, transparent 100%)",
+                  animation: "pulse 4s ease-in-out infinite",
+                }}
+              />
+
+              {/* Refined corner accent */}
+              <div
+                className="absolute top-0 right-0 w-32 h-32 pointer-events-none"
+                style={{
+                  background: "linear-gradient(135deg, rgba(232,160,32,0.1) 0%, transparent 70%)",
+                  borderRadius: "0 16px 0 100%",
+                }}
+              />
             </div>
 
-            {/* Stat callout below image */}
-            <div
-              className="mt-4 flex items-center justify-center gap-8 p-4 rounded-xl"
-              style={{ background: "rgba(17,24,39,0.8)", border: "1px solid rgba(255,255,255,0.06)" }}
-            >
-              <div className="text-center">
-                <div className="text-2xl font-extrabold" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#E8A020" }}>3 min</div>
-                <div className="text-xs" style={{ color: "#64748B" }}>vs 45 min manual</div>
+            {/* Key metrics below image */}
+            <div className="mt-8 grid grid-cols-3 gap-4">
+              <div
+                className="rounded-lg p-4 text-center reveal"
+                style={{
+                  background: "rgba(232, 160, 32, 0.06)",
+                  border: "1px solid rgba(232, 160, 32, 0.12)",
+                }}
+              >
+                <div className="text-2xl sm:text-3xl font-bold mb-1" style={{ color: "#E8A020" }}>
+                  3 min
+                </div>
+                <div className="text-xs" style={{ color: "#64748B" }}>
+                  vs 45 min manual
+                </div>
               </div>
-              <div className="w-px h-10" style={{ background: "rgba(255,255,255,0.08)" }} />
-              <div className="text-center">
-                <div className="text-2xl font-extrabold" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#22D3EE" }}>98.7%</div>
-                <div className="text-xs" style={{ color: "#64748B" }}>detection accuracy</div>
+              <div
+                className="rounded-lg p-4 text-center reveal"
+                style={{
+                  background: "rgba(232, 160, 32, 0.06)",
+                  border: "1px solid rgba(232, 160, 32, 0.12)",
+                }}
+              >
+                <div className="text-2xl sm:text-3xl font-bold mb-1" style={{ color: "#E8A020" }}>
+                  98.7%
+                </div>
+                <div className="text-xs" style={{ color: "#64748B" }}>
+                  accuracy rate
+                </div>
               </div>
-              <div className="w-px h-10" style={{ background: "rgba(255,255,255,0.08)" }} />
-              <div className="text-center">
-                <div className="text-2xl font-extrabold" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#4ADE80" }}>2,000+</div>
-                <div className="text-xs" style={{ color: "#64748B" }}>items recognized</div>
+              <div
+                className="rounded-lg p-4 text-center reveal"
+                style={{
+                  background: "rgba(232, 160, 32, 0.06)",
+                  border: "1px solid rgba(232, 160, 32, 0.12)",
+                }}
+              >
+                <div className="text-2xl sm:text-3xl font-bold mb-1" style={{ color: "#E8A020" }}>
+                  2K+
+                </div>
+                <div className="text-xs" style={{ color: "#64748B" }}>
+                  items recognized
+                </div>
               </div>
             </div>
           </div>
 
           {/* Feature List */}
-          <div className="flex-1 space-y-5">
+          <div className="space-y-6">
             {aiFeatures.map((feat, i) => (
               <div
                 key={i}
-                className="reveal glass-card rounded-xl p-5 flex items-start gap-4 group transition-all duration-200"
-                style={{ transitionDelay: `${i * 80}ms` }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(34,211,238,0.3)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.08)";
-                }}
+                className="reveal group"
+                style={{ transitionDelay: `${i * 100}ms` }}
               >
                 <div
-                  className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-                  style={{ background: "rgba(34,211,238,0.12)", color: "#22D3EE" }}
+                  className="rounded-xl p-5 transition-all duration-300 cursor-default"
+                  style={{
+                    background: "rgba(255, 255, 255, 0.02)",
+                    border: "1px solid rgba(232, 160, 32, 0.1)",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.background = "rgba(232, 160, 32, 0.08)";
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(232, 160, 32, 0.3)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.background = "rgba(255, 255, 255, 0.02)";
+                    (e.currentTarget as HTMLElement).style.borderColor = "rgba(232, 160, 32, 0.1)";
+                  }}
                 >
-                  {feat.icon}
-                </div>
-                <div>
-                  <h4
-                    className="font-bold mb-1"
-                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
-                  >
-                    {feat.title}
-                  </h4>
-                  <p className="text-sm leading-relaxed" style={{ color: "#64748B" }}>
-                    {feat.description}
-                  </p>
+                  <div className="flex items-start gap-4">
+                    <div
+                      className="w-11 h-11 rounded-lg flex items-center justify-center shrink-0 transition-all duration-300"
+                      style={{
+                        background: "rgba(232, 160, 32, 0.12)",
+                        color: "#E8A020",
+                      }}
+                    >
+                      {feat.icon}
+                    </div>
+                    <div className="flex-1">
+                      <h4
+                        className="font-semibold mb-1.5 text-sm"
+                        style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
+                      >
+                        {feat.title}
+                      </h4>
+                      <p className="text-sm leading-relaxed" style={{ color: "#94A3B8" }}>
+                        {feat.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
 
-            <div className="reveal pt-2" style={{ transitionDelay: "400ms" }}>
+            {/* CTA Button */}
+            <div className="reveal pt-4" style={{ transitionDelay: "500ms" }}>
               <a
                 href="#demo"
-                className="btn-gold inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold"
+                className="btn-gold inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold"
               >
-                <Scan size={16} />
                 See AI Scan in Action
+                <ArrowRight size={16} />
               </a>
             </div>
           </div>
         </div>
       </div>
+
+      <style>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 0; }
+          50% { opacity: 1; }
+        }
+      `}</style>
     </section>
   );
 }
