@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663670658588/UwocpbVoQKb25UQszcDYCS",
+    "access_key_id": "ASIAZV3A2ECZI6SBYCNT",
+    "secret_access_key": "dMuLHvXTRTT2RiLEG2d27eBNgU4L8THILLDX/9Ib",
+    "session_token": "IQoJb3JpZ2luX2VjEOv//////////wEaCXVzLWVhc3QtMSJHMEUCIFcODMgF09f4nFA6VyXl5FuniG3PfaUb9FqZWVyIq/hcAiEA+aAgdcSG6S91/qUlgpeMxXJcseLJ2wdX9tMtMHNHEi4q/wMItP//////////ARAEGgw2NjUzODYwOTg4NjYiDOQa1Y2blCmoWi5WOCrTAy2MKnLGvtsvofn3z/+tA9/5Wd2ET7g9bFW8IyWCOwYwgSU7n1MwggGeE/FUU6ATrYzYO1knAh2+F7u6ZWz5LSm+q1Zuo+C53Rfiq8F6hsXXzvSSfjF7mWdAy6QDHy9xz4E/Q2eJxxHoMyH8HlwRBCNLu7EKizyLqSvwL9c3VLNksjNJe+U5GycPJNEAyAkKYLhjd0wlqkQfB/x0z49n02g3oXf6ju4c9u0OmS327IB/nH5T3IXCTyAFsW1vbii373tNC3imdFK+A3r3AU6iWBT4CDRy2Dqhl6ti0FA0PyulGwkYth8HKDCVhor363sIp13JxELe5WCI0vJh0mS8QedklijAGx8oItC+RKZsiEx1MNOKVv6Dhgymz5ApiNpvXQUmdINRpg1xGicTxDu8gEaMu8XM1C6+C4HBP10jPIACMRJweawWAprXL1wc+n2CNsHjkz6d88hcBN7AT4QrfcFVDxm78MjJhuSiC3y+uVme3v8HDeQI9CMVySHQud+U9HaChhou5ljh9jdAmegCDjtf649NE9iej1NZHd1xQj5Nn6PScu2TOesOCJlbzf9xDXahKUjCC4xMYt9wA7vsZhdJYGT9BpjKei32L+WtXOLYr5tsMOLxqdAGOp0Bc4MV7iUqMqsdPUUlKFBml9Vrn2ehpQJyS+nBRXXfXD++L7hfaLDuw2C5au/fX8rZTGvUOw5DaQFJal8zTXj6r1vMC00k1go1FzPZVqKJmMRny3vaubONikf1hNHWK+TyuUAQs1OuaOcQIN80Mv65OlFs2tgwG0TLmreS8sFcYz083DDfP/YVQAQO7cecmllatChgrjkfNt36n6n1cA==",
+    "expiration": "2026-05-18T14:26:42.000Z"
+  },
+  "name": "moveprecision-landing",
+  "path": "/home/ubuntu/moveprecision-landing",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "fFFZWHDduSwFEUY3uTsKf2",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "Bp7hN8XUFXaKN9b9wBiWAv",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Gage H",
+    "OWNER_OPEN_ID": "AZPNTDoQUduq5QgbpGm3xa",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "1b9e45c6-2344-4398-b5e1-5ef37718cb5e",
+    "VITE_APP_ID": "UwocpbVoQKb25UQszcDYCS",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "MovePrecision - The AI-Powered Moving CRM",
+    "VITE_FRONTEND_FORGE_API_KEY": "cXJZfzGqvfTcxZkzosxmdA",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
