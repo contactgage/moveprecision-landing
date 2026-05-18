@@ -95,7 +95,7 @@ function FeatureBlock({ feature, index }: { feature: typeof features[0]; index: 
         <ul className="space-y-3 mb-8">
           {feature.bullets.map((bullet, i) => (
             <li key={i} className="flex items-start gap-3">
-              <CheckCircle2 size={18} className="mt-0.5 shrink-0" style={{ color: "#0066FF" }} />
+              <CheckCircle2 size={18} className="mt-0.5 shrink-0" style={{ color: "#E8A020" }} />
               <span className="text-sm" style={{ color: "#94A3B8" }}>{bullet}</span>
             </li>
           ))}
@@ -107,7 +107,7 @@ function FeatureBlock({ feature, index }: { feature: typeof features[0]; index: 
         >
           <span
             className="text-3xl font-extrabold"
-            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#0066FF" }}
+            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#E8A020" }}
           >
             {feature.stat.value}
           </span>
@@ -142,7 +142,7 @@ export default function FeaturesSection() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center pt-24 pb-4">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
             Platform Features
           </p>
           <h2

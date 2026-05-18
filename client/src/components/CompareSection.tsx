@@ -74,7 +74,7 @@ export default function CompareSection() {
     >
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14 reveal">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
             Why Switch
           </p>
           <h2
@@ -103,7 +103,7 @@ export default function CompareSection() {
                   className="py-4 px-5 text-center text-sm font-bold"
                   style={{
                     background: "rgba(232,160,32,0.08)",
-                    color: "#0066FF",
+                    color: "#E8A020",
                     borderLeft: "1px solid rgba(232,160,32,0.2)",
                     borderRight: "1px solid rgba(232,160,32,0.2)",
                   }}
@@ -112,7 +112,7 @@ export default function CompareSection() {
                     <span>MoveForce</span>
                     <span
                       className="text-xs px-2 py-0.5 rounded-full font-semibold"
-                      style={{ background: "rgba(232,160,32,0.2)", color: "#0066FF" }}
+                      style={{ background: "rgba(232,160,32,0.2)", color: "#E8A020" }}
                     >
                       ✦ Best Choice
                     </span>
@@ -143,7 +143,7 @@ export default function CompareSection() {
                     {feat === "AI Inventory Scan" && (
                       <span
                         className="ml-2 text-xs px-1.5 py-0.5 rounded font-semibold"
-                        style={{ background: "rgba(232,160,32,0.15)", color: "#0066FF" }}
+                        style={{ background: "rgba(232,160,32,0.15)", color: "#E8A020" }}
                       >
                         AI
                       </span>

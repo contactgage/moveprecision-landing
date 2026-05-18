@@ -6,7 +6,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, Play, Star, TrendingUp, Users, Zap } from "lucide-react";
 
-const HERO_DASHBOARD_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/hero-dashboard-nD9aWZprzrPvcRxpVihCZU.webp";
+const HERO_DASHBOARD_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/hero-dashboard-moveforce-9CFSVVnnikoBPbAvFUU6XY.webp";
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -57,7 +57,7 @@ export default function HeroSection() {
             style={{
               background: "rgba(0, 102, 255, 0.12)",
               border: "1px solid rgba(0, 102, 255, 0.3)",
-              color: "#0066FF",
+              color: "#E8A020",
             }}
           >
             <Zap size={12} className="fill-current" />
@@ -70,7 +70,7 @@ export default function HeroSection() {
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", maxWidth: "900px", color: "#F0EDE8" }}
           >
             The Moving CRM That{" "}
-            <span style={{ background: "linear-gradient(135deg, #0066FF 0%, #00D4FF 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Dominates</span>
+            <span className="text-gold-gradient">Thinks Ahead</span>
           </h1>
 
           {/* Sub-headline */}
@@ -109,7 +109,7 @@ export default function HeroSection() {
                 className="w-7 h-7 rounded-full flex items-center justify-center"
                 style={{ background: "rgba(232, 160, 32, 0.2)" }}
               >
-                <Play size={12} className="ml-0.5" style={{ color: "#0066FF" }} />
+                <Play size={12} className="ml-0.5" style={{ color: "#E8A020" }} />
               </div>
               Watch 2-min Demo
             </a>
@@ -123,19 +123,19 @@ export default function HeroSection() {
             <div className="flex items-center gap-1.5">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={13} className="fill-current" style={{ color: "#0066FF" }} />
+                  <Star key={i} size={13} className="fill-current" style={{ color: "#E8A020" }} />
                 ))}
               </div>
               <span className="text-sm font-medium" style={{ color: "#94A3B8" }}>4.9/5 on Capterra</span>
             </div>
             <div className="w-px h-4" style={{ background: "rgba(255,255,255,0.1)" }} />
             <div className="flex items-center gap-1.5">
-              <Users size={14} style={{ color: "#0066FF" }} />
+              <Users size={14} style={{ color: "#E8A020" }} />
               <span className="text-sm font-medium" style={{ color: "#94A3B8" }}>500+ Moving Companies</span>
             </div>
             <div className="w-px h-4" style={{ background: "rgba(255,255,255,0.1)" }} />
             <div className="flex items-center gap-1.5">
-              <TrendingUp size={14} style={{ color: "#0066FF" }} />
+              <TrendingUp size={14} style={{ color: "#E8A020" }} />
               <span className="text-sm font-medium" style={{ color: "#94A3B8" }}>Avg. 43% Revenue Growth</span>
             </div>
           </div>

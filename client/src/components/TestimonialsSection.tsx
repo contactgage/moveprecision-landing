@@ -14,7 +14,7 @@ const testimonials = [
     location: "Atlanta, GA",
     stat: "+52% revenue",
     initials: "MJ",
-    color: "#0066FF",
+    color: "#E8A020",
   },
   {
     quote: "The dispatch system is a game-changer. We went from morning chaos to a perfectly organized day. Our crews know exactly where to be and our customers love the live tracking.",
@@ -111,7 +111,7 @@ export default function TestimonialsSection() {
 
       <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-14 reveal">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
             Customer Stories
           </p>
           <h2
@@ -140,7 +140,7 @@ export default function TestimonialsSection() {
             {/* Stars */}
             <div className="flex gap-1 mb-6">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={18} className="fill-current" style={{ color: "#0066FF" }} />
+                <Star key={i} size={18} className="fill-current" style={{ color: "#E8A020" }} />
               ))}
             </div>
 
@@ -191,7 +191,7 @@ export default function TestimonialsSection() {
                   className="h-1.5 rounded-full transition-all duration-300"
                   style={{
                     width: i === active ? "28px" : "8px",
-                    background: i === active ? "#0066FF" : "rgba(255,255,255,0.15)",
+                    background: i === active ? "#E8A020" : "rgba(255,255,255,0.15)",
                   }}
                 />
               ))}
@@ -203,7 +203,7 @@ export default function TestimonialsSection() {
                 style={{ border: "1px solid rgba(255,255,255,0.12)", color: "#94A3B8" }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,160,32,0.4)";
-                  (e.currentTarget as HTMLElement).style.color = "#0066FF";
+                  (e.currentTarget as HTMLElement).style.color = "#E8A020";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)";
@@ -218,7 +218,7 @@ export default function TestimonialsSection() {
                 style={{ border: "1px solid rgba(255,255,255,0.12)", color: "#94A3B8" }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,160,32,0.4)";
-                  (e.currentTarget as HTMLElement).style.color = "#0066FF";
+                  (e.currentTarget as HTMLElement).style.color = "#E8A020";
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)";

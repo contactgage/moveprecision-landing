@@ -147,7 +147,7 @@ export default function AIInventorySection() {
               style={{ background: "rgba(17,24,39,0.8)", border: "1px solid rgba(255,255,255,0.06)" }}
             >
               <div className="text-center">
-                <div className="text-2xl font-extrabold" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#0066FF" }}>3 min</div>
+                <div className="text-2xl font-extrabold" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#E8A020" }}>3 min</div>
                 <div className="text-xs" style={{ color: "#64748B" }}>vs 45 min manual</div>
               </div>
               <div className="w-px h-10" style={{ background: "rgba(255,255,255,0.08)" }} />

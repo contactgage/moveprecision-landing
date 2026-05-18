@@ -38,13 +38,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 group">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/moveforce-logo-MVsD76dmxaQgb8jAVbcWJ4.webp" alt="MoveForce" className="w-8 h-8" />
-            <span
-              className="text-lg font-bold tracking-tight"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
-            >
-              Move<span style={{ color: "#0066FF" }}>Force</span>
-            </span>
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/moveforce-icon-7ghoYncavcbDx8u95dVNJh.webp" alt="MoveForce" className="w-8 h-8" />
           </a>
 
           {/* Desktop Nav */}

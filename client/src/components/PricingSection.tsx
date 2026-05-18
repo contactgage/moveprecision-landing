@@ -40,7 +40,7 @@ const plans = [
     ],
     cta: "Start Free Trial",
     popular: true,
-    accentColor: "#0066FF",
+    accentColor: "#E8A020",
   },
   {
     name: "Enterprise",
@@ -93,7 +93,7 @@ export default function PricingSection() {
     >
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 reveal">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
             Pricing
           </p>
           <h2
@@ -116,7 +116,7 @@ export default function PricingSection() {
               className="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200"
               style={{
                 background: !annual ? "rgba(232,160,32,0.15)" : "transparent",
-                color: !annual ? "#0066FF" : "#64748B",
+                color: !annual ? "#E8A020" : "#64748B",
               }}
             >
               Monthly
@@ -126,7 +126,7 @@ export default function PricingSection() {
               className="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center gap-2"
               style={{
                 background: annual ? "rgba(232,160,32,0.15)" : "transparent",
-                color: annual ? "#0066FF" : "#64748B",
+                color: annual ? "#E8A020" : "#64748B",
               }}
             >
               Annual
@@ -157,7 +157,7 @@ export default function PricingSection() {
               {plan.popular && (
                 <div
                   className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold flex items-center gap-1.5"
-                  style={{ background: "linear-gradient(135deg, #F5C04A, #0066FF)", color: "#0A0E1A" }}
+                  style={{ background: "linear-gradient(135deg, #F5C04A, #E8A020)", color: "#0A0E1A" }}
                 >
                   <Zap size={11} className="fill-current" />
                   Most Popular
@@ -176,7 +176,7 @@ export default function PricingSection() {
                 <div className="flex items-baseline gap-1">
                   <span
                     className="text-4xl font-extrabold"
-                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: plan.popular ? "#0066FF" : "#F0EDE8" }}
+                    style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: plan.popular ? "#E8A020" : "#F0EDE8" }}
                   >
                     ${annual ? plan.annualPrice : plan.monthlyPrice}
                   </span>
@@ -192,7 +192,7 @@ export default function PricingSection() {
               <ul className="space-y-3 mb-8 flex-1">
                 {plan.features.map((feat, fi) => (
                   <li key={fi} className="flex items-start gap-2.5">
-                    <Check size={15} className="mt-0.5 shrink-0" style={{ color: plan.popular ? "#0066FF" : "#4ADE80" }} />
+                    <Check size={15} className="mt-0.5 shrink-0" style={{ color: plan.popular ? "#E8A020" : "#4ADE80" }} />
                     <span className="text-sm" style={{ color: "#94A3B8" }}>{feat}</span>
                   </li>
                 ))}

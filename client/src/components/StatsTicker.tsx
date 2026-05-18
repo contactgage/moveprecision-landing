@@ -21,7 +21,7 @@ function StatItem({ value, label }: { value: string; label: string }) {
       <div className="flex items-center gap-3">
         <span
           className="text-xl font-extrabold"
-          style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#0066FF" }}
+          style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#E8A020" }}
         >
           {value}
         </span>

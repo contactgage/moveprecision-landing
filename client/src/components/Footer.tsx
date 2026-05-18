@@ -25,13 +25,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="col-span-2">
             <a href="#" className="flex items-center gap-2.5 mb-4">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/moveforce-logo-MVsD76dmxaQgb8jAVbcWJ4.webp" alt="MoveForce" className="w-8 h-8" />
-              <span
-                className="text-lg font-bold"
-                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", color: "#F0EDE8" }}
-              >
-                Move<span style={{ color: "#0066FF" }}>Force</span>
-              </span>
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663670658588/UwocpbVoQKb25UQszcDYCS/moveforce-icon-7ghoYncavcbDx8u95dVNJh.webp" alt="MoveForce" className="w-8 h-8" />
             </a>
             <p className="text-sm leading-relaxed mb-5" style={{ color: "#475569", maxWidth: "220px" }}>
               The AI-powered moving CRM that helps your company win more jobs and grow faster.
@@ -53,7 +47,7 @@ export default function Footer() {
                     border: "1px solid rgba(255,255,255,0.06)",
                   }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLElement).style.color = "#0066FF";
+                    (e.currentTarget as HTMLElement).style.color = "#E8A020";
                     (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,160,32,0.3)";
                   }}
                   onMouseLeave={(e) => {

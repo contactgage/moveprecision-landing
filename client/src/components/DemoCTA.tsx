@@ -68,7 +68,7 @@ export default function DemoCTA() {
               }}
             >
               <div className="reveal">
-                <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#0066FF" }}>
+                <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#E8A020" }}>
                   Get Started Today
                 </p>
                 <h2
@@ -89,7 +89,7 @@ export default function DemoCTA() {
                     "14-day free trial, no credit card needed",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
-                      <CheckCircle2 size={16} style={{ color: "#0066FF" }} />
+                      <CheckCircle2 size={16} style={{ color: "#E8A020" }} />
                       <span className="text-sm" style={{ color: "#94A3B8" }}>{item}</span>
                     </li>
                   ))}
